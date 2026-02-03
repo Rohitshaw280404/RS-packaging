@@ -1,0 +1,58 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,sans-serif}
+
+/* NAVBAR */
+.navbar{
+  position:relative;z-index:1000;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:16px 40px;background:#0b2c4d;color:#fff
+}
+.logo{font-size:26px;font-weight:700}
+.logo span{color:#00a3e0}
+.nav-links{list-style:none;display:flex;gap:22px}
+.nav-links a{color:#e6eef5;text-decoration:none;font-size:15px}
+.dropdown{position:relative}
+.menu{
+  position:absolute;top:38px;left:0;display:none;
+  background:#fff;list-style:none;min-width:200px;
+  box-shadow:0 8px 20px rgba(0,0,0,.15)
+}
+.menu a{display:block;padding:10px 14px;color:#0b2c4d}
+.menu a:hover{background:#f1f5f9}
+.dropdown:hover .menu{display:block}
+.nav-right{display:flex;gap:12px}
+.nav-right select,.nav-right button{
+  padding:8px 14px;border:none;border-radius:4px
+}
+.nav-right button{background:#00a3e0;color:#fff}
+
+/* HERO */
+.hero{display:flex;height:460px;position:relative;z-index:1}
+
+/* LEFT */
+.hero-left{
+  width:55%;position:relative;
+  background:url("https://static.vecteezy.com/system/resources/thumbnails/072/114/163/small/eco-friendly-packaging-open-cardboard-box-with-green-leaves-symbolizing-sustainable-delivery-and-natural-products-free-photo.jpeg")
+  no-repeat right center/cover
+}
+.hero-panel{
+  position:absolute;left:0;top:0;width:40%;height:100%;
+  background:rgba(11,44,77,.85);color:#fff;
+  padding:60px;display:flex;flex-direction:column;justify-content:center
+}
+.hero-panel h6{font-size:14px;letter-spacing:1.5px;margin-bottom:20px}
+.hero-panel h1{font-size:34px;line-height:1.25;margin-bottom:25px}
+.hero-panel a{
+  width:fit-content;background:#0077c8;color:#fff;
+  padding:12px 22px;text-decoration:none;border-radius:4px
+}
+
+/* RIGHT */
+.hero-right{width:45%;display:flex;background:#0b4a7d}
+.info{
+  flex:1;padding:80px 60px;color:#fff;
+  display:flex;flex-direction:column;justify-content:space-between
+}
+.info span{font-size:14px;letter-spacing:1.5px}
+.info h2{font-size:36px;line-height:1.25}
+.arrow{font-size:42px}
+.line{width:1px;background:rgba(255,255,255,.25);margin:60px 0}
